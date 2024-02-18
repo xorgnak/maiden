@@ -141,6 +141,7 @@ module Maiden
   end
 end
 
+
 module GRID
 
   @@GRID_SIZE = 4
