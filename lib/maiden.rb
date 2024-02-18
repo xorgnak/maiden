@@ -156,10 +156,7 @@ module GRID
   ##
   # known place stack
   def self.[] k
-    if k.class == String
-      def each &b
-        @@G[k].each { |e| b.call(e) }
-      end
+    if k.class == String && "#{k}".length > 0
       return @@G[k]
     end
   end
